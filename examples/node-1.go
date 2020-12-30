@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/arriqaaq/chord"
-	"github.com/arriqaaq/chord/models"
 	"log"
 	"math/big"
 	"os"
 	"os/signal"
 	"time"
+
+	"github.com/arriqaaq/chord"
+	"github.com/arriqaaq/chord/models"
 )
 
 func createNode(id string, addr string, sister *models.Node) (*chord.Node, error) {

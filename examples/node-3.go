@@ -1,12 +1,14 @@
 package main
 
 import (
-	"github.com/arriqaaq/chord"
-	"github.com/arriqaaq/chord/models"
 	"log"
 	"math/big"
 	"os"
 	"os/signal"
+
+	"github.com/arriqaaq/chord"
+	"github.com/arriqaaq/chord/models"
+
 	// "strconv"
 	"time"
 )
@@ -31,7 +33,7 @@ func createID(id string) []byte {
 
 func main() {
 
-	joinNode := chord.NewInode("1", "0.0.0.0:8001")
+	joinNode := chord.NewInode("1", "0.0.0.0:8002")
 
 	h, err := createNode("8", "0.0.0.0:8003", joinNode)
 	if err != nil {
